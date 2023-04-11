@@ -24,10 +24,8 @@ export const Login = (props) => {
                 
                 
             </form>
-            <button className ="link-btn"  onClick={() => props.onFormSwitch("register")}>¿Aun no tienes una cuenta? <br></br> Registrate
-            como estudiante</button>
-            <button className ="link-btn"  onClick={() => props.onFormSwitch("register")}>  Registrate
-            como Profesor</button>
+            <button className ="link-btn"  onClick={() => props.onFormSwitch("register")}>¿Aun no tienes una cuenta? Registrate en estudiando.pe</button>
+
         </div>
     )
 }

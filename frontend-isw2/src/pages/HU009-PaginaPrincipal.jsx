@@ -1,6 +1,12 @@
 //import React from "react";
 
 const HU009PaginaPrincipal = () => {
-    return(0)
+    return(
+        <div>
+            <section id="parte1">
+                
+            </section>
+        </div>
+    )
 }
 export default HU009PaginaPrincipal

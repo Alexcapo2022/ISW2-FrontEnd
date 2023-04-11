@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import './css/App.css';
 import { Login } from './login&register/Login';
 import { Register } from './login&register/Register';
 

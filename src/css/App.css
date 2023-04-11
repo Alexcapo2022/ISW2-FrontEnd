@@ -4,7 +4,7 @@
 }
 
 html,body{
-  background-image: url(./imagenes/login1.webp);
+  background-image: url(/src/imagenes/login1.webp);
   color: white;
   background-attachment: fixed;
   background-repeat: none;

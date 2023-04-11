@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import '../estilos/css/index.css';
+import '../estilos/css/App.css';
 
 export const Register =(props) =>{
     const [email,setEmail] = useState("")

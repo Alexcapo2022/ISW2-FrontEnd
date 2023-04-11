@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 /*import { Link } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';*/
+import '../estilos/css/index.css';
+import '../estilos/css/App.css';
 
 
 
@@ -24,7 +26,7 @@ export const Login = (props) => {
                 
                 
             </form>
-            <button className ="link-btn"  onClick={() => props.onFormSwitch("register")}>¿Aun no tienes una cuenta? Registrate en estudiando.pe</button>
+            <a href="/Register"> <button className ="link-btn" >¿Aun no tienes una cuenta? Registrate en estudiando.pe </button></a>
 
         </div>
     )

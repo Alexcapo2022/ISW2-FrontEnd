@@ -35,16 +35,18 @@ export const Register =(props) =>{
                 <label htmlFor = "DNI" >DNI O C.E.</label>
                 <input value={dni} onChange={(e) => setDNI(e.target.value)} type = "DNI" placeholder = "72915878" id="dni" name="dni"/>
                 
-                <label htmlFor = "nacimiento" >Fecha de Nacimiento</label>
-                <input value={nacimiento} onChange={(e) => setNac(e.target.value)} type = "date" placeholder = "22/03/2000" id="nacimiento" name="nacimiento"/>
-
                 <label htmlFor = "password" >Colegio de Procedencia</label>
                 <input value={cole} onChange={(e) => setCole(e.target.value)} type = "cole" placeholder = "PAMER" id="password" name="password"/>
                 
                 <label htmlFor = "grado" >Grado</label>
                 <input value={grado} onChange={(e) => setGrad(e.target.value)} type = "grado" placeholder = "1ero de secundaria" id="password" name="password"/>
 
-                <button type="submit">Log In</button>
+                <label htmlFor = "nacimiento" >Fecha de Nacimiento</label>
+                <input value={nacimiento} onChange={(e) => setNac(e.target.value)} type = "date" placeholder = "22/03/2000" id="nacimiento" name="nacimiento"/>
+
+                <button type="submit">Registrar como estudiante</button>
+                <button type="submit">Registrar como profesor</button>
+
             </form>
             <button className ="link-btn" onClick={() => props.onFormSwitch("login")}>¿Ya tienes una cuenta? Inicia Sesion</button>
         </div>

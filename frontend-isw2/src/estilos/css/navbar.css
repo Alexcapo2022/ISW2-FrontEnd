@@ -21,7 +21,7 @@ body{
 .wrapper .sidebar{
   width: 200px;
   height: 100%;
-  background: #4b4276;
+  background: #318ce7;
   padding: 30px 0px;
   position: fixed;
 }
@@ -35,13 +35,13 @@ body{
 
 .wrapper .sidebar ul li{
   padding: 15px;
-  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid white;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
 
 .wrapper .sidebar ul li a{
-  color: #bdb8d7;
+  color: white;
   display: block;
 }
 
@@ -50,7 +50,8 @@ body{
 }
 
 .wrapper .sidebar ul li:hover{
-  background-color: #594f8d;
+  background-color: 
+  #87cefa;
 }
     
 .wrapper .sidebar ul li:hover a{
@@ -68,7 +69,7 @@ body{
 .wrapper .sidebar .social_media a{
   display: block;
   width: 40px;
-  background: #594f8d;
+  background: #87cefa;
   height: 40px;
   line-height: 45px;
   text-align: center;
@@ -104,4 +105,7 @@ body{
   .social_media{
     display: none !important;
   }
+}
+.Logo{
+  font-size: 1.4em;
 }

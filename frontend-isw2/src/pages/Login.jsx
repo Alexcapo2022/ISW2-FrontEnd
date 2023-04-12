@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 /*import { Link } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';*/
-import '../estilos/css/index.css';
-import '../estilos/css/App.css';
+import '../estilos/css/Login.css';
+
 
 
 

@@ -1,4 +1,6 @@
 import '../estilos/css/navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook,faInstagram,faTiktok } from '@fortawesome/free-brands-svg-icons'
 const Navbar = ()=>{
     return(
         <div>
@@ -14,13 +16,12 @@ const Navbar = ()=>{
             <li><a href="#"><i class="fas fa-project-diagram"></i>Solicitar ayuda</a></li>
             <li><a href="#"><i class="fas fa-blog"></i>Rankings</a></li>
             <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
-            <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li>
         </ul> 
         <div class="social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
+            <a href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a hrer="https://www.instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.tiktok.com"><FontAwesomeIcon icon={faTiktok} /></a>
+        </div>
     </div>
 </div>
         </div>

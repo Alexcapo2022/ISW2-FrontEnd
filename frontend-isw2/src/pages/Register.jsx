@@ -9,7 +9,6 @@ export const Register =(props) =>{
     const [name,setName] = useState("")
     const [num,setNum] = useState("")
     const [dni,setDNI] = useState("")
-    const [nacimiento,setNac] = useState("")
     const [cole,setCole] = useState("")
     const [grado,setGrad] = useState("")
     const [edad,setEdad] = useState("")
@@ -52,8 +51,6 @@ export const Register =(props) =>{
                 <label htmlFor = "grado" >Grado</label>
                 <input value={grado} onChange={(e) => setGrad(e.target.value)} type = "grado" placeholder = "1ero de secundaria" id="password" name="password"/>
 
-                <label htmlFor = "nacimiento" >Fecha de Nacimiento</label>
-                <input value={nacimiento} onChange={(e) => setNac(e.target.value)} type = "date" placeholder = "22/03/2000" id="nacimiento" name="nacimiento"/>
                 <div className='check'>
                 <input type="checkbox" id="topping" name="topping" value="Paneer" />Profesor
 

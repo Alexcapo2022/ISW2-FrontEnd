@@ -48,7 +48,7 @@ const HU010VerCursos = () =>{
                     tabindex="0">
 
                     <div className='con' class="row gy-3">
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -59,7 +59,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -70,7 +70,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                
                                 <div class="menu-item-content p-4">
@@ -81,7 +81,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -91,7 +91,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -102,7 +102,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                
                                 <div class="menu-item-content p-4">
@@ -113,7 +113,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                
                                 <div class="menu-item-content p-4">
@@ -128,7 +128,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                
                                 <div class="menu-item-content p-4">
@@ -138,7 +138,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -161,7 +161,7 @@ const HU010VerCursos = () =>{
                     aria-labelledby="pills-breakfast-tab" tabindex="0">
                     <div class="row gy-4">
 
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -172,7 +172,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                
                                <div class="menu-item-content p-4">
@@ -183,7 +183,7 @@ const HU010VerCursos = () =>{
                                </div>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -200,7 +200,7 @@ const HU010VerCursos = () =>{
                 <div class="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
                     tabindex="0">
                     <div class="row gy-4">
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -211,7 +211,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                
                                <div class="menu-item-content p-4">
@@ -222,7 +222,7 @@ const HU010VerCursos = () =>{
                                </div>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                
                                <div class="menu-item-content p-4">
@@ -244,7 +244,7 @@ const HU010VerCursos = () =>{
                     tabindex="0">
                     <div class="row gy-4">
 
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                
                                <div class="menu-item-content p-4">
@@ -254,7 +254,7 @@ const HU010VerCursos = () =>{
                                </div>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                         <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">
@@ -264,7 +264,7 @@ const HU010VerCursos = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-6 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 
                                 <div class="menu-item-content p-4">

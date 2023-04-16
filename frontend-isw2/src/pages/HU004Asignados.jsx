@@ -15,7 +15,7 @@ function HU004Asignados(props) {
                 <div className="platos">
                     <img
                         className="plato1"
-                        src={require(`../imagenes/${props.imagen}`)}
+                        src={require(`../imagenes/hvr_img/${props.imagen}`)}
                         alt="foto bife" />
                     <div className="nombrePlato">
                         <h4 className="rest">

@@ -41,7 +41,6 @@ root.render(
 
 
       <Route path='/PaginaPrincipal' element={<HU009PaginaPrincipal />}/>
-<<<<<<< HEAD
 
 
 
@@ -55,15 +54,16 @@ root.render(
 
 
 
-=======
+
+
       <Route path='/VerCursos' element={<HU010VerCursos />}/>
->>>>>>> c1dfb5e7ff95349984bfbed9ae65d8cbeff84b82
+
       <Route path='/Register' element={<Register/>}/>
       <Route path='/AñadirCurso' element={<AñadirCurso/>}/>
       <Route path='/AccederCurso' element={<AccederCurso/>}/>
       <Route path='/' element={<Login/>}/>
 
-<<<<<<< HEAD
+
 
 
 
@@ -84,11 +84,6 @@ root.render(
       <Route path='/Recupera' element={<Recupera/>}/>
 
 
-
-
-      
-=======
->>>>>>> c1dfb5e7ff95349984bfbed9ae65d8cbeff84b82
       
       
     </Routes>

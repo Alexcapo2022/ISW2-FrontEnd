@@ -1,12 +1,14 @@
 import '../estilos/css/Vercursos.css';
+import Navbar from "../componentes/navbar"
 
 
 
 const HU010VerCursos = () =>{
     return (
         <div>
+            <Navbar/>
             
-            <section id="menu" style={{padding:"0px 250px"}} className="bg-light">
+            <section id="menu" className="bg-light">
             <div class="container">
             <div class="row">
                 <div class="col-12 intro-text">

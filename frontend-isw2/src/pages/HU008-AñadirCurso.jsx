@@ -1,8 +1,10 @@
-//import '../estilos/css/AñadirCurso.css';
+import '../estilos/css/AñadirCurso.css';
+import Navbar from "../componentes/navbar"
 
 const AñadirCurso = () => {
     return(
         <div>
+          <Navbar/>
               <h1 className="titulo"> Agregar un nuevo Curso</h1>
   <div className="container">
     <div className="card">

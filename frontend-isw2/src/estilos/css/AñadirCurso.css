@@ -1,16 +1,29 @@
-* {
-    font-family: 'Hanuman', serif;
-}
+
 
 html,body{
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-image: url(/src/imagenes/hvr_img/crema.avif);
+    color: white;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+
 .titulo{
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: black;
     margin-top: 100px;
     font-weight: 100;
 
@@ -19,12 +32,13 @@ html,body{
 
 .container{
     width: 100%;
-    max-width: 100px;
-    height: 430px;
+    max-width: 250px;
+    height: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    color: black;
 }
 
 .container .card{

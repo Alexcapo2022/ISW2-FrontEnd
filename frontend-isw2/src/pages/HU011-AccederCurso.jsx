@@ -1,7 +1,10 @@
 import '../estilos/css/AccederCurso.css';
+import Navbar from "../componentes/navbar"
+
 const AccederCurso = ()=>{
     return(
         <div>
+          <Navbar/>
             <h1 className="titulo_AC">
     ELIGE EN NIVEL DE DIFICULTAD DE LA TAREA QUE VAS A REALIZAR
   </h1>

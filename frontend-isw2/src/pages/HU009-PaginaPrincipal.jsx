@@ -1,6 +1,8 @@
 //import React from "react";
 import Navbar from "../componentes/navbar"
 import '../estilos/css/PaginaPrincipal.css';
+
+
 const HU009PaginaPrincipal = () => {
     return(
         <div>

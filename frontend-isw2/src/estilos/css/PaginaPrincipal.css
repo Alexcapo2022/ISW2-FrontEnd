@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(/src/imagenes/hvr_img/crema.avif);
+    color: black;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+
+    
+  }
+
+  
 h1{
     font-size: 3.5em;
 }

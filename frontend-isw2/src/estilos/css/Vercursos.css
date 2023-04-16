@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
 section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -7,8 +7,22 @@ section {
 }
 
 
+body{
+    background-image: url(/src/imagenes/hvr_img/crema.avif);
+    color: white;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
 
-
+  
 
 
 /* registro */
@@ -22,8 +36,10 @@ section {
 
 #menu{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
+        background-image: url(/src/imagenes/hvr_img/crema.avif);
         background-repeat: no-repeat;
         background-size: cover;
+        
 }
 #menu .nav-pills .nav-link {
     background-color: #fff;

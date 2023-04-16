@@ -1,8 +1,5 @@
-*{
-    box-sizing: border-box;
-}
 
-body{
+.pp{
     background-image: url(/src/imagenes/hvr_img/crema.avif);
     color: black;
     background-attachment: fixed;
@@ -11,8 +8,7 @@ body{
     margin: 0;
 
     
-  }
-
+}
   
 h1{
     font-size: 3.5em;
@@ -25,11 +21,7 @@ h3{
 }
 ul{ list-style: none;}
 li{font-size: 1.25em;}
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin  :0;
-    
-}
+
 .index_button{
     font-size: 1.5em;
     font-weight: bold;
@@ -188,8 +180,11 @@ header a:hover{
     padding: 200px 12px;
 }
 
-
-
+.sec{
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
     
 
 .container_index img{

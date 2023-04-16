@@ -1,6 +1,7 @@
 import '../estilos/css/navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook,faInstagram,faTiktok } from '@fortawesome/free-brands-svg-icons'
+
 const Navbar = ()=>{
     return(
         <div>

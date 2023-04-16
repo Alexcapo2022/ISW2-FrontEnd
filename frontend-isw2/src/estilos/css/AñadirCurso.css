@@ -1,25 +1,18 @@
 
 
-html,body{
-    margin: 0;
-    padding: 0;
-}
 
-body{
+
+
+
+.ac{
+    
     background-image: url(/src/imagenes/hvr_img/crema.avif);
     color: white;
     background-attachment: fixed;
     background-repeat: none;
     background-size: cover;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    
-  }
-
+}
 .titulo{
     text-align: center;
     font-size: 40px;
@@ -39,6 +32,7 @@ body{
     justify-content: center;
     margin: auto;
     color: black;
+    
 }
 
 .container .card{

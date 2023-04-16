@@ -5,7 +5,7 @@ import '../estilos/css/PaginaPrincipal.css';
 
 const HU009PaginaPrincipal = () => {
     return(
-        <div>
+        <div className="pp">
             <Navbar/>
             <section id="hero">
         <h1>Una pagina pensada en estudiantes, </h1>
@@ -33,7 +33,8 @@ const HU009PaginaPrincipal = () => {
         
         </div>
     </section>
-    <section id="nuestrosProductos">
+    <div className="ben">
+    <section className="sec" id="nuestrosProductos">
                 <div className="container_index">
                   <h2>Beneficios de Nuestro sitio</h2>
                   <div className="productos">
@@ -55,6 +56,7 @@ const HU009PaginaPrincipal = () => {
                   </div>
                 </div>
               </section>
+              </div>
     
     
         </div>

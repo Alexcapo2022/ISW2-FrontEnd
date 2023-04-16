@@ -27,68 +27,25 @@ root.render(
   <React.StrictMode>
   
   <React.StrictMode>
+
     <BrowserRouter>
     
     <Routes>
-
-
-
-
-
-
-
-
-
-
       <Route path='/PaginaPrincipal' element={<HU009PaginaPrincipal />}/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <Route path='/VerCursos' element={<HU010VerCursos />}/>
-
       <Route path='/Register' element={<Register/>}/>
       <Route path='/AñadirCurso' element={<AñadirCurso/>}/>
       <Route path='/AccederCurso' element={<AccederCurso/>}/>
       <Route path='/' element={<Login/>}/>
-
-
-
-
-
-
-
-
-
-
-
       <Route path='/AsignadosProfesor' element={<HU004Profesor/>}/>
-
-
-
-
-
-
-
       <Route path='/Recupera' element={<Recupera/>}/>
 
-
-      
-      
     </Routes>
+
     </BrowserRouter>
+
   </React.StrictMode>
+
   </React.StrictMode>
 );
 

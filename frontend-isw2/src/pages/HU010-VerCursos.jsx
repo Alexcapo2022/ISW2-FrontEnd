@@ -5,7 +5,7 @@ import Navbar from "../componentes/navbar"
 
 const HU010VerCursos = () =>{
     return (
-        <div>
+        <div className='vc'>
             <Navbar/>
             
             <section id="menu" className="bg-light">
@@ -47,7 +47,7 @@ const HU010VerCursos = () =>{
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
                     tabindex="0">
 
-                    <div class="row gy-3">
+                    <div className='con' class="row gy-3">
                         <div class="col-lg-4 col-sm-6">
                             <div class="menu-item bg-white shadow-on-hover">
                                 

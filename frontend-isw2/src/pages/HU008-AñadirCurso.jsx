@@ -3,7 +3,7 @@ import Navbar from "../componentes/navbar"
 
 const AñadirCurso = () => {
     return(
-        <div>
+        <div className='ac'>
           <Navbar/>
               <h1 className="titulo"> Agregar un nuevo Curso</h1>
   <div className="container">

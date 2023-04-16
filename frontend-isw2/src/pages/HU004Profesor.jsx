@@ -17,7 +17,7 @@ function HU004Profesor() {
     
     
     <div className="Platos">
-        <h1>BINVENIDO PROFESOR</h1>
+        <h1>BIENVENIDO PROFESOR</h1>
         <div className='contenedor-principal'>
             <h3>SELECCIONE GRADO Y COLEGIO</h3>
             <select className="seleccionador" name="RESTAURANTE DEL PEDIDO">

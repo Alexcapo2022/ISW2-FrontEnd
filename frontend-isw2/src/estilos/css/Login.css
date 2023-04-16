@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
   }
   
 body{
@@ -18,8 +19,12 @@ body{
 
     
   }
+<<<<<<< HEAD
 
 
+=======
+  
+>>>>>>> c1dfb5e7ff95349984bfbed9ae65d8cbeff84b82
   .App {
     text-align:center;
     padding-left: 20px;

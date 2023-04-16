@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../estilos/css/Login.css';
+import swal from 'sweetalert';
 
 
 export const Register =(props) =>{
@@ -17,6 +18,10 @@ export const Register =(props) =>{
         console.log(email)
     }
     
+    const alerta = () =>{
+        swal("Registro exitoso")
+    }
+
     return(
         <div className='auth-form-container'>
             <h1 className='tittle'>REGISTRATE EN ESTUDIANDO.PE</h1>
@@ -45,9 +50,13 @@ export const Register =(props) =>{
 
                 <label htmlFor = "nacimiento" >Fecha de Nacimiento</label>
                 <input value={nacimiento} onChange={(e) => setNac(e.target.value)} type = "date" placeholder = "22/03/2000" id="nacimiento" name="nacimiento"/>
+                <div className='check'>
+                <input type="checkbox" id="topping" name="topping" value="Paneer" />Profesor
 
-                <button type="submit">Registrar como estudiante</button>
-                <button type="submit">Registrar como profesor</button>
+                <input type="checkbox" id="topping" name="topping" value="Paneer" />Estudiante </div>
+
+                <button onClick={()=>alerta()}> REGISTRARME</button>
+                
 
             </form>
             <a href="/"> <button className ="link-btn" >¿Ya tienes una cuenta? Inicia Sesion </button></a>

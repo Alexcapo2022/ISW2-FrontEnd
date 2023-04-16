@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';*/
 import '../estilos/css/Login.css';
+import swal from 'sweetalert';
 
 
 
@@ -13,6 +14,10 @@ export const Login = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+    }
+
+    const alerta = () =>{
+        swal("Ingreso Exitoso")
     }
 
     return(
@@ -27,7 +32,9 @@ export const Login = (props) => {
                 
             </form>
             <a href="/Register"> <button className ="link-btn" >¿Aun no tienes una cuenta? Registrate en estudiando.pe </button></a>
+            <a href="/Recupera"> <button className ="link-btn" >¿Te olvidaste tu contraseña? Cambiar contraseña </button></a>
 
+            <button onClick={()=>alerta()}> LOGIN </button>
         </div>
     )
 }

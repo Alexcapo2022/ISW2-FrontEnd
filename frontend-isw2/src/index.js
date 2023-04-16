@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 import HU004Profesor from './pages/HU004Profesor';
+import { Recupera } from './pages/Recupera';
 
 
 
@@ -62,6 +63,19 @@ root.render(
 
 
       <Route path='/AsignadosProfesor' element={<HU004Profesor/>}/>
+
+
+
+
+
+
+
+      <Route path='/Recupera' element={<Recupera/>}/>
+
+
+
+
+      
       
       
     </Routes>

@@ -29,15 +29,7 @@ function HU004Profesor() {
         </select>
         </div>
 
-        <div className='contenedor-principal'>
-            <select className="seleccionador" name="RESTAURANTE DEL PEDIDO">
-            <option value="seleccione">PAMER</option>
-            <option value="LongHorn">SACO OLIVEROS</option>
-            <option value="Chili's">RECOLETA</option>
-            <option value="T.G.I. Friday's">SAN AGUSTIN</option>
-        </select>
 
-        </div>
 
         <div className='contenedor-principal'>
             <select className="seleccionador" name="RESTAURANTE DEL PEDIDO">
@@ -58,41 +50,35 @@ function HU004Profesor() {
                 codigo = "ALG-2023"
              />
             <HU004Asignados
-                imagen = "curso1.webp"
-                nombre = "Algebra"
+                imagen = "geometria.png"
+                nombre = "Geometria"
                 grado = "1ero Secundario"
                 descripcion = "CURSO ESPECIALIZADO EN EL DESARROLLO DE LA LOGICA DE LOS ALUMNOS"
-                codigo = "ALG-2023"
+                codigo = "GMT-2023"
              />
             <HU004Asignados
-                imagen = "curso1.webp"
-                nombre = "Algebra"
+                imagen = "trigo.png"
+                nombre = "Trigonometria"
                 grado = "1ero Secundario"
                 descripcion = "CURSO ESPECIALIZADO EN EL DESARROLLO DE LA LOGICA DE LOS ALUMNOS"
-                codigo = "ALG-2023"
+                codigo = "TRGM-2023"
              />
             <HU004Asignados
-                imagen = "curso1.webp"
-                nombre = "Algebra"
+                imagen = "arit.jpg"
+                nombre = "Aritmetica"
                 grado = "1ero Secundario"
                 descripcion = "CURSO ESPECIALIZADO EN EL DESARROLLO DE LA LOGICA DE LOS ALUMNOS"
-                codigo = "ALG-2023"
+                codigo = "ARTM-2023"
                 
              />
             <HU004Asignados
-                imagen = "curso1.webp"
-                nombre = "Algebra"
+                imagen = "rm.jpg"
+                nombre = "Razomaniento Matematico"
                 grado = "1ero Secundario"
                 descripcion = "CURSO ESPECIALIZADO EN EL DESARROLLO DE LA LOGICA DE LOS ALUMNOS"
-                codigo = "ALG-2023"
+                codigo = "RM-2023"
              />
-            <HU004Asignados
-                imagen = "curso1.webp"
-                nombre = "Algebra"
-                grado = "1ero Secundario"
-                descripcion = "CURSO ESPECIALIZADO EN EL DESARROLLO DE LA LOGICA DE LOS ALUMNOS"
-                codigo = "ALG-2023"
-             />
+
         </div>
     </div>
   );

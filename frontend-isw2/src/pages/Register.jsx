@@ -12,6 +12,7 @@ export const Register =(props) =>{
     const [nacimiento,setNac] = useState("")
     const [cole,setCole] = useState("")
     const [grado,setGrad] = useState("")
+    const [edad,setEdad] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -41,6 +42,9 @@ export const Register =(props) =>{
 
                 <label htmlFor = "DNI" >DNI O C.E.</label>
                 <input value={dni} onChange={(e) => setDNI(e.target.value)} type = "DNI" placeholder = "72915878" id="dni" name="dni"/>
+
+                <label htmlFor = "DNI" >EDAD</label>
+                <input value={edad} onChange={(e) => setEdad(e.target.value)} type = "EDAD" placeholder = "72915878" id="edad" name="edad"/>
                 
                 <label htmlFor = "password" >Colegio de Procedencia</label>
                 <input value={cole} onChange={(e) => setCole(e.target.value)} type = "cole" placeholder = "PAMER" id="password" name="password"/>

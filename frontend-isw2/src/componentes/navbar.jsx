@@ -12,7 +12,7 @@ const Navbar = ()=>{
         <ul>
             <li><a href="/PaginaPrincipal"><i class="fas fa-home"></i>Pagina Principal</a></li>
             <li><a href="/Register"><i class="fas fa-user"></i>Profile</a></li>
-            <li><a href="#"><i class="fas fa-address-card"></i>Cursos</a></li>
+            <li><a href="/VerCursos"><i class="fas fa-address-card"></i>Cursos</a></li>
             <li><a href="#"><i class="fas fa-project-diagram"></i>Solicitar ayuda</a></li>
             <li><a href="#"><i class="fas fa-blog"></i>Rankings</a></li>
             <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>

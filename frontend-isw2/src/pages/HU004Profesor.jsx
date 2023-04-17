@@ -1,6 +1,6 @@
 import React from 'react';
 import "../estilos/css/Rest.css";
-
+import Navbar from "../componentes/navbar"
 import HU004Asignados from './HU004Asignados';
 
 
@@ -17,6 +17,7 @@ function HU004Profesor() {
     
     
     <div className="Platos">
+        <Navbar/>
         <h1>BIENVENIDO PROFESOR</h1>
         <div className='contenedor-principal'>
             <h3>SELECCIONE GRADO Y COLEGIO</h3>

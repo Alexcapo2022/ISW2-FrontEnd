@@ -12,15 +12,42 @@ export const Register =(props) =>{
     const [cole,setCole] = useState("")
     const [grado,setGrad] = useState("")
     const [edad,setEdad] = useState("")
+    const [errorRegistro, setErrorRegistro] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(email)
+        console.log(errorRegistro)
+        console.log(alerta)
     }
     
     const alerta = () =>{
         swal("Registro exitoso")
     }
+
+    const httpRegistro = async (user) =>{
+    const resp = await fetch("http://localhost:4444/registro", {
+        method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+        });
+        const data = await resp.json();
+        console.log(data)
+        if (data.verify) {
+            // Se registró satisfactoriamente.
+            alert("Cuenta registrada satisfactoriamente!");
+            window.location.href="http://localhost:4445/"; // Redireccion con renderizado
+            localStorage.setItem("Usuario_correo",user.email)
+            
+        } else {
+            // Correo ya registrado.
+            alert("Ya existe el usuario, intente nuevamente!");
+            setErrorRegistro(true)
+        }
+    }
+    
 
     return(
         <div className='auth-form-container'>
@@ -56,7 +83,36 @@ export const Register =(props) =>{
 
                 <input type="checkbox" id="topping" name="topping" value="Paneer" />Estudiante </div>
 
-                <button onClick={()=>alerta()}> REGISTRARME</button>
+                <button onClick={()=>{
+                    if (name !== "" && email !== "" && pass !== "") {
+                        const user = {}
+                        user.name = name;
+                        user.email = email;
+                        user.dni = dni;
+                        user.nombre_colegio = cole;
+                        user.edad= edad;
+                        user.grado = grado;
+                        user.password = pass;
+                        user.telefono = num;
+
+                        httpRegistro(user);
+
+                        setName("")
+                        setEmail("")
+                        setDNI("")
+                        setCole("")
+                        setEdad("")
+                        setGrad("")
+                        setPass("")
+                        setNum("")
+
+                        
+                        
+
+                } else {
+                    alert("Completa los formularios correctamente!");
+                }}
+                }> REGISTRARME</button>
                 
 
             </form>

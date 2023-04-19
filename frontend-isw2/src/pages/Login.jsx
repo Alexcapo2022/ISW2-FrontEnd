@@ -46,6 +46,35 @@ export const Login = (props) => {
         }
     }
 
+    const htppLoginP = async(user) => {
+        const resp = await fetch("http://localhost:4444/loginP",{
+            method: "POST",
+            headers : {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+        });
+        const data = await resp.json();
+        if (data.verify){
+            // Login correcto.
+            setLogged(true)
+            alert(`Welcome ${user.email}.`);
+            window.location.href="http://localhost:4445/PaginaPrincipal"; // Redireccion con renderizado
+            localStorage.setItem("Usuario_correo",user.email)
+        }else{
+             // No existe el usuario. Error.
+             setErrorLogin(true)
+        }
+    }
+
+    // LOGIN PROFESOR
+const [checkedA, setCheckedA] = useState(false);//ALUMNO
+const [checkedP, setCheckedP] = useState(false); //PROFE
+
+function toggle(value){
+    return !value;
+  }
+
     return(
         <div className='auth-form-container'>
             <h1 className='tittle'>BIENVENIDO A ESTUDIANDO.PE</h1>
@@ -54,6 +83,10 @@ export const Login = (props) => {
                 <input value ={email} onChange={(e) => setEmail(e.target.value)} type = "email" placeholder = "Ingresa tu correo" id="email" name="email"/>
                 <label htmlFor = "password" >Contraseña</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type = "password" placeholder = "*************" id="password" name="password"/>
+                <div className='check'>
+                <input type="checkbox" checked={checkedP} onChange={() => setCheckedP(toggle)}/>Profesor
+
+                <input type="checkbox" checked={checkedA} onChange={() => setCheckedA(toggle)} />Estudiante </div>
                 
                 
             </form>
@@ -65,11 +98,25 @@ export const Login = (props) => {
                     const user = {};
                     user.email = email;
                     user.password = pass;
-                    htppLogin(user);
+                    
                     setEmail("");
                     setPass("");
+                    DecidirLogin();
+
                     
 
+                    function DecidirLogin (setCheckedA,setCheckedP){
+                        if(setCheckedA===false && setCheckedP===false){
+                            console.log("selecciona una opción")
+                            alert("selecciona una opción de login")
+                        }else if(checkedA===true){
+                            htppLogin(user);
+                        }
+                        else if(checkedP===true){
+                            htppLoginP(user);
+                        }
+                        return 0;
+                    }
                 } else {
                     alert("Llena toda la información!");
                 }

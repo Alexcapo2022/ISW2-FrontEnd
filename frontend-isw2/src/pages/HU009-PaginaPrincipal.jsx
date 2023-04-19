@@ -9,7 +9,7 @@ const HU009PaginaPrincipal = () => {
             <Navbar/>
             <section id="hero">
         <h2 className="tit">Una pagina pensada en estudiantes, </h2>
-        <h2>supera tus limites repasando con nosotros</h2>
+        <h2 className="tit">supera tus limites repasando con nosotros</h2>
         <section id="hero2">
           <a href="#">
             <button  class="index_button">Cursos de Secundaria</button>

@@ -1,0 +1,17 @@
+#Tablaprincipal thead tr {
+    text-align: center;
+  }
+  
+  #Tablaprincipal tbody td {
+    text-align: center;
+  }
+  
+  .card {
+    margin: 20px;
+  }
+  
+  .card-body {
+    margin: 0 10px;
+  }
+  
+  

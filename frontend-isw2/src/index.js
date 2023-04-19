@@ -1,3 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -5,6 +10,28 @@ import ReactDOM from 'react-dom/client';
 import HU009PaginaPrincipal from './pages/HU009-PaginaPrincipal';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import ActividadesBrindadas from './pages/HU005-ActividadesBrindadas'; 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 //import Navbar from './componentes/navbar';
@@ -23,6 +50,38 @@ root.render(
       <Route path='/Register' element={<Register/>}/>
       <Route path='/' element={<Login/>}/>
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Route path='/ActividadesBrindadas' element={<ActividadesBrindadas/>}/>
+
       
     </Routes>
     </BrowserRouter>

@@ -8,8 +8,8 @@ const HU009PaginaPrincipal = () => {
         <div className="pp">
             <Navbar/>
             <section id="hero">
-        <h1 className="tit">Una pagina pensada en estudiantes, </h1>
-        <h1>supera tus limites repasando con nosotros</h1>
+        <h2 className="tit">Una pagina pensada en estudiantes, </h2>
+        <h2>supera tus limites repasando con nosotros</h2>
         <section id="hero2">
           <a href="#">
             <button  class="index_button">Cursos de Secundaria</button>

@@ -8,7 +8,7 @@ const HU009PaginaPrincipal = () => {
         <div className="pp">
             <Navbar/>
             <section id="hero">
-        <h1>Una pagina pensada en estudiantes, </h1>
+        <h1 className="tit">Una pagina pensada en estudiantes, </h1>
         <h1>supera tus limites repasando con nosotros</h1>
         <section id="hero2">
           <a href="#">

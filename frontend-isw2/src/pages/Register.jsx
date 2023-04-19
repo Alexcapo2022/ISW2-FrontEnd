@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
 import '../estilos/css/Login.css';
 import swal from 'sweetalert';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 
 export const Register =(props) =>{
@@ -47,6 +48,67 @@ export const Register =(props) =>{
             setErrorRegistro(true)
         }
     }
+    const url="http://localhost:4444/colegio"
+    const [Colegio,setColegio] = useState([])
+
+    const getColegio = async() =>{
+        const respuesta = await axios.get(url);
+        setColegio(respuesta.data);
+        console.log(respuesta.data)
+    }
+
+    useEffect(()=>{
+        getColegio();
+    },[])
+
+    const Datacole = (props) =>{
+        return(
+                <option value={props.curso.NOMBRE} >{props.curso.NOMBRE}</option> 
+                
+        )
+    }
+
+    // //PROFESOR REGISTRO 
+    // const [email2,setEmail2] = useState("")
+    // const [pass2,setPass2] = useState("")
+    // const [name2,setName2] = useState("")
+    // const [num2,setNum2] = useState("")
+    // const [dni2,setDNI2] = useState("")
+    // const [cole2,setCole2] = useState("")
+    // const [edad2,setEdad2] = useState("")
+    // const [errorRegistro2, setErrorRegistro2] = useState(false)
+
+    const httpRegistroP = async (user) =>{
+        const resp = await fetch("http://localhost:4444/registroP", {
+            method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            });
+            const data = await resp.json();
+            console.log(data)
+            if (data.verify) {
+                // Se registró satisfactoriamente.
+                alert("Cuenta registrada satisfactoriamente!");
+                window.location.href="http://localhost:4445/"; // Redireccion con renderizado
+                localStorage.setItem("Usuario_correo",user.email)
+                
+            } else {
+                // Correo ya registrado.
+                alert("Ya existe el usuario, intente nuevamente!");
+                setErrorRegistro(true)
+            }
+        }
+
+
+// REGISTRO PROFESOR
+const [checkedA, setCheckedA] = useState(false);//ALUMNO
+const [checkedP, setCheckedP] = useState(false); //PROFE
+
+function toggle(value){
+    return !value;
+  }
     
 
     return(
@@ -73,15 +135,18 @@ export const Register =(props) =>{
                 <input value={edad} onChange={(e) => setEdad(e.target.value)} type = "EDAD" placeholder = "72915878" id="edad" name="edad"/>
                 
                 <label htmlFor = "password" >Colegio de Procedencia</label>
-                <input value={cole} onChange={(e) => setCole(e.target.value)} type = "cole" placeholder = "PAMER" id="password" name="password"/>
-                
+                <select onChange={(e) => setCole(e.target.value)} value={cole} name="cole" id="cole">
+                    <option value="">Selecciona</option>
+                    {Colegio.map((curso,id)=>(<Datacole curso={curso}></Datacole>))}
+                </select>
                 <label htmlFor = "grado" >Grado</label>
                 <input value={grado} onChange={(e) => setGrad(e.target.value)} type = "grado" placeholder = "1ero de secundaria" id="password" name="password"/>
 
                 <div className='check'>
-                <input type="checkbox" id="topping" name="topping" value="Paneer" />Profesor
+                <input type="checkbox" checked={checkedP} onChange={() => setCheckedP(toggle)}/>Profesor
 
-                <input type="checkbox" id="topping" name="topping" value="Paneer" />Estudiante </div>
+                <input type="checkbox" checked={checkedA} onChange={() => setCheckedA(toggle)} />Estudiante </div>
+
 
                 <button onClick={()=>{
                     if (name !== "" && email !== "" && pass !== "") {
@@ -95,8 +160,32 @@ export const Register =(props) =>{
                         user.password = pass;
                         user.telefono = num;
 
-                        httpRegistro(user);
+                        
+                        DecidirRegistro();
 
+                        //funcion (//)
+                        function DecidirRegistro (setCheckedA,setCheckedP){
+                            if(setCheckedA===false && setCheckedP===false){
+                                console.log("selecciona una opción")
+                                alert("selecciona una opción de registro")
+                            }else if(checkedA===true){
+                                httpRegistro(user);
+                            }
+                            else if(checkedP===true){
+                                httpRegistroP(user);
+                            }
+                            return 0;
+                        }
+                        
+                        
+
+                        
+                        /*
+                            0. Valida si tiene alguno seleccionado o todos 
+                            1. si solamente se ha marcado 1 check
+                            2. Si es el de alumno funcion httpRegistro
+                            3. Else if es profesor funcion httpRegistroP
+                        */
                         setName("")
                         setEmail("")
                         setDNI("")

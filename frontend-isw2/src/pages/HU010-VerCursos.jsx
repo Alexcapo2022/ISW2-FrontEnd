@@ -27,6 +27,7 @@ const HU010VerCursos = () =>{
                 <div className="menu-item bg-white shadow-on-hover">
                     <div className="menu-item-content p-4">
                         <h5 className="mt-1 mb-2"><a href="/AccederCurso">{props.curso.NOMBRE}</a></h5>
+                        <p className="small">{props.curso.GRADO}</p>
                         <p className="small">{props.curso.UNIDAD}</p>
                         <p className="small">{props.curso.DESCRIPCION}</p>
                     </div>
@@ -83,7 +84,7 @@ const HU010VerCursos = () =>{
                 <div className="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
                     tabindex="0">
 
-                    <div className="row gy-3">
+                    <div className="row gy-4">
                         {Cursos.map((curso,id)=>(<Curso curso={curso} ></Curso>))}
                     </div>
 
@@ -92,124 +93,21 @@ const HU010VerCursos = () =>{
                 <div className="tab-pane fade show" id="pills-breakfast" role="tabpanel"
                     aria-labelledby="pills-breakfast-tab" tabindex="0">
                     <div className="row gy-4">
-
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                                
-                                <div className="menu-item-content p-4">
-                                    
-                                    <h5 className="mt-1 mb-2"><a href="/AccederCurso">Matemática</a></h5>
-                                    <p className="small">El curso de matemáticas para secundaria enseña conceptos como álgebra, geometría, trigonometría y estadística para desarrollar habilidades analíticas y de resolución de problemas.</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                               
-                               <div className="menu-item-content p-4">
-                                   
-                                   <h5 className="mt-1 mb-2"><a href="/AccederCurso">Física</a></h5>
-                                   <p className="small">El curso de física para secundaria estudia las leyes del universo, la energía, la materia y las fuerzas, aplicando conceptos matemáticos y experimentales.</p>
-                                   
-                               </div>
-                           </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                                
-                                <div className="menu-item-content p-4">
-    
-                                    <h5 className="mt-1 mb-2"><a href="/AccederCurso">Ciencias</a></h5>
-                                    <p className="small">El curso de ciencias para secundaria cubre temas como biología, química y física para comprender el mundo natural y su funcionamientos</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        {Cursos.map((curso,id)=>(<Curso curso={curso} ></Curso>))}
                     </div>
                 </div>
 
                 <div className="tab-pane fade show" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
                     tabindex="0">
                     <div className="row gy-4">
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                                
-                                <div className="menu-item-content p-4">
-                                    
-                                    <h5 className="mt-1 mb-2"><a href="/AccederCurso#">Lenguaje</a></h5>
-                                    <p className="small">El curso de Lenguaje para secundaria desarrolla habilidades de lectura, escritura, gramática y comunicación oral para mejorar la expresión y comprensión del lenguaje.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                               
-                               <div className="menu-item-content p-4">
-                                  
-                                   <h5 className="mt-1 mb-2"><a href="/AccederCurso">Razonamiento Verbal</a></h5>
-                                   <p className="small">El curso de Razonamiento verbal para secundaria enseña habilidades para analizar, comprender y resolver problemas de comprensión de textos y vocabulario.</p>
-                                       
-                               </div>
-                           </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                               
-                               <div className="menu-item-content p-4">
-                                  
-                                   <h5 className="mt-1 mb-2"><a href="/AccederCurso">Historia</a></h5>
-                                   <p className="small">El curso de Historia para secundaria explora eventos, procesos y personas del pasado para comprender el presente y la evolución de las sociedades humanas.
-
-
-
-</p>
-                                       
-                               </div>
-                           </div>
-                        </div>
+                        {Cursos.map((curso,id)=>(<Curso curso={curso} ></Curso>))}
                     </div>
                 </div>
 
                 <div className="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
                     tabindex="0">
                     <div className="row gy-4">
-
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                               
-                               <div className="menu-item-content p-4">
-                                   
-                                   <h5 className="mt-1 mb-2"><a href="/AccederCurso">Trigonometría</a></h5>
-                                   <p className="small">El curso de Trigonometría para secundaria estudia las funciones trigonométricas, ángulos y triángulos para resolver problemas geométricos.</p>
-                               </div>
-                           </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                        <div className="menu-item bg-white shadow-on-hover">
-                                
-                                <div className="menu-item-content p-4">
-                                    
-                                    <h5 className="mt-1 mb-2"><a href="/AccederCurso">Química</a></h5>
-                                    <p className="small">El curso de química para secundaria explora la estructura y propiedades de la materia, reacciones químicas y su aplicación en la vida diaria.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                            <div className="menu-item bg-white shadow-on-hover">
-                                
-                                <div className="menu-item-content p-4">
-                                    <h5 className="mt-1 mb-2"><a href="/AccederCurso">Civica</a></h5>
-                                    <p className="small">El curso de Civica para secundaria promueve la formación ciudadana, los derechos y deberes, la participación activa y responsable en la sociedad.
-
-
-
-</p>
-                                        
-                                </div>
-                            </div>
-                        </div>
+                        {Cursos.map((curso,id)=>(<Curso curso={curso} ></Curso>))}
                     </div>
                 </div>
 

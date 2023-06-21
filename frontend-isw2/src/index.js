@@ -9,6 +9,7 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 
 
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -39,6 +40,7 @@ root.render(
       <Route path='/' element={<Login/>}/>
       <Route path='/AsignadosProfesor' element={<HU004Profesor/>}/>
       <Route path='/Recupera' element={<Recupera/>}/>
+      
 
     </Routes>
 

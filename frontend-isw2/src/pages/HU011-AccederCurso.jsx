@@ -6,8 +6,7 @@ const AccederCurso = ()=>{
         <div>
           <Navbar/>
             <h1 className="titulo_AC">
-    ELIGE EN NIVEL DE DIFICULTAD DE LA TAREA QUE VAS A REALIZAR
-  </h1>
+    ELIGE EL NIVEL DE DIFICULTAD DE LA TAREA QUE VAS A REALIZAR</h1>
   <div className="sele">
     <h3 className="titulo2_AC">selecciona un nivel</h3>
     <select className="sel" name="RESTAURANTE DEL PEDIDO">
